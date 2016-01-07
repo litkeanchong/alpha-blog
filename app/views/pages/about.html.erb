@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header {
+    background-color:#99bbff;
+    color:#0059b3;
+    text-align:center;
+    padding:5px;	 
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:1000px;
+    width:100px;
+    float:left;
+    padding:5px;	      
+}
+section {
+    width:1100px;
+    color:#0059b3;
+    float:left;
+    font-family:Helvetica;
+    
+    padding:10px;	 	 
+}
+div.left {
+    width:500px;
+    height:300px;
+    float:left;
+    font-family:Helvetica;
+    color:#0059b3;
+    position:relative;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    text-align:center;
+}
+div.right {
+    width:500px;
+    height:300px;
+    float:right;
+    font-family:Helvetica;
+    color:#0059b3;
+    position:relative;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    text-align:center;
+}
+
+footer {
+    background-color:#99bbff;
+    color:#0059b3;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>My Docky GirlFriend</h1>
+</header>
+
+<nav>
+<%= link_to 'Home', root_path %> <br>
+<%= link_to 'About', about_path %>
+</nav>
+
+<section>
+    <h1 style="text-align:center">
+        Sunshine
+    </h1>
+    
+    <%= image_tag 'dork.jpg', :style => "float:center;width:100%;height:100%;" %> 
+    
+    <div>
+        <div class="left">
+          <p>
+              I Love you bibi!!
+              </p>
+        </div>
+
+        <div class="right">
+          <p>
+              I Love you bibi!!22
+            </p>
+        </div>
+    </div>
+    
+</section>
+<footer>
+Copyright © Dispicable Jon 2016
+</footer>
+
+</body>
+</html>
